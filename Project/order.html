@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Rathin Karmakra">
+        <meta name="description" content="This page is to request any order you want.">
+        <link rel="icon" href="orderlogo.png" type="image/x-icon">
+        <link rel="stylesheet" href="main.css" type="text/css">
+        <title>Order</title>
+    </head>
+
+    <body>
+        <header>
+            <h1>Store.</h1>
+
+        </header>
+        <br>
+        <hr>
+        <main>
+            <section>
+                <h2>Order Section.</h2>
+                <p>
+                    Enter you personal details along with contact info so we can contact you.
+                </p>
+                <form action="https://httpbin.org/post" method="post">
+                    <fieldset>
+                        <legend>Personal Information.</legend>
+                        <p>
+                            <label for="firstName">First Name:</label>
+                            <input type="text" name="firstName" id="firstName" placeholder="Rathin" autocomplete="on" required autofocus>
+                        </p>
+                        <p>
+                            <label for="laststName">Last Name:</label>
+                            <input type="text" name="laststName" id="laststName" placeholder="karmakar" autocomplete="on" required>
+                        </p>
+                        <p>
+                            <label for="aadharNumber">Aadhar Number:</label>
+                            <input type="text" name="aadharNumber" id="aadharNumber" required>
+                        </p>
+                        <p>
+                            <label for="dateOfBirth">Date of Birth:</label>
+                            <input type="date" name="dateOfBirth" id="dateOfBirth" required>
+                        </p>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Contact Information.</legend>
+                        <p>
+                            <label for="phoneNumber">Phone Number:</label>
+                            <input type="tel" name="phoneNumber" id="phoneNumber" required>
+                        </p>
+                        <p>
+                            <label for="emailAddress">Email:</label>
+                            <input type="email" name="emailAddress" id="emailAddress" placeholder="Optional">
+                        </p>
+                        <p>
+                            <label for="address">Address:</label>
+                            <textarea name="address" id="address" cols="30" rows="4" placeholder="Enter your address"></textarea>
+                        </p>
+                    </fieldset>
+                    <fieldset>
+                        <legend>What you want to order.</legend>
+                        <p>
+                            <label for="typeOfDevice">Type Of Device:</label>
+                            <select name="typeOfDevice" id="typeOfDevice" required>
+                                <option value="mobile">Mobile</option>
+                                <option value="laptop">Laptop</option>
+                                <option value="tablet">Tablet</option>
+                                <option value="headset">Headset</option>
+                                <option value="earphone">Earphone</option>
+                                <option value="tv">TV</option>
+                                <option value="camera">Camera</option>
+                            </select>
+                        </p>
+                        <p>
+                            <label for="brand">Brand</label>
+                            <select name="brand" id="brand" required>
+                            <option value="samsung">Samsung</option>
+                            <option value="apple">Apple</option>
+                            <option value="redmi">Redmi</option>
+                            <option value="realme">Realme</option>
+                            <option value="asus">Asus</option>
+                            <option value="dell">Dell</option>
+                            <option value="sony">Sony</option>
+                            <option value="canon">Canon</option>
+                            <option value="vivo">Vivo</option>
+                            <option value="jbl">JBL</option>
+                            <option value="eksa">Eksa</option>
+                            <option value="lg">LG</option>
+                            <option value="rezor">Rezor</option>
+                            <option value="lenovo">Lenovo</option>
+                            </select>
+                        </p>
+                        <p>
+                            <label for="modelNumber">Model Number:</label>
+                            <input type="text" name="modelNumber" id="modelNumber" required>
+                        </p>
+                    </fieldset>
+                    <br>
+                    <button type="submit" formaction="https:/httpbin.org/post" formmethod="post">Submit</button>
+                    <button type="reset">Reset</button>
+                </form>
+            </section>
+        </main>
+        <br>
+        <hr>
+        <footer>
+            <p>
+                G.K. Electronics &copy; Rathin Karmakar.
+            </p>
+            <p>
+                <a href="#"><mark>Back to top.</mark></a>
+            </p>
+        </footer>
+    </body>
+</html>
