@@ -4,10 +4,118 @@
         <meta charset="UTF-8">
         <meta name="author" content="Rathin Karmakar">
         <meta name="description" content="This page is to get the feed back.">
+        <link rel="stylesheet" href="main.css" type="text/css">
+        <link rel="icon" href="feedbackicon.png" type="image/x-icon">
+        <title>Feedback</title>
 
     </head>
     <body>
-        <h1>FeedBack</h1>
+        <header>
+            <h1>Feedback.</h1>
+
+        </header>
+        <hr>
+        <main>
+            <section id="feedbackSection">
+                <h2>Give Us Your Feedback:</h2>
+                <form action="https://httpbin.org/post" method="post">
+                    <fieldset>
+                        <legend>Your Information</legend>
+                        <p>
+                            <label for="name">Name:</label>
+                            <input type="text" name="name" id="name" placeholder="Rathin Karmakar" autocomplete="on" required autofocus>
+                        </p>
+                        <p>
+                            <label for="phoneNumber">Phone:</label>
+                            <input type="tel" name="phoneNumber" id="phoneNumber" required>
+                        </p>
+                        <p>
+                            <label for="email">Email:</label>
+                            <input type="email" name="email" id="email" placeholder="Optional">
+                        </p>
+                    </fieldset>
+                    <fieldset>
+                        <legend>How was your exprience with our store?</legend>
+                        <input type="radio" name="experienceWithStore" id="excellent" value="excellent">
+                        <label for="excellent">Excellent.</label>
+                        <input type="radio" name="experienceWithStore" id="good" value="good">
+                        <label for="good">Good.</label>
+                        <input type="radio" name="experienceWithStore" id="managable" value="managable">
+                        <label for="managable">Managable.</label>
+                        <input type="radio" name="experienceWithStore" id="bad" value="bad">
+                        <label for="bad">Bad.</label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>How was your experience with our staffs in the store?</legend>
+                        <input type="radio" name="experienceWithStaff" id="approchable" value="approchable">
+                        <label for="approchable">They were very approchable.</label>
+                        <br>
+                        <input type="radio" name="experienceWithStaff" id="friendly" value="friendly">
+                        <label for="friendly">They were friendly.</label>
+                        <br>
+                        <input type="radio" name="experienceWithStaff" id="hard" value="hard">
+                        <label for="hard">They were hard to talk.</label>
+                        <br>
+                        <input type="radio" name="experienceWithStaff" id="ignoring" value="ignoring">
+                        <label for="ignoring">They were ignoring us.</label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>What were the things that you liked about our store?</legend>
+                        <input type="checkbox" name="thingsThatYouLiked" id="enviroment" value="enviroment">
+                        <label for="enviroment">Enviroment of the store.</label>
+                        <br>
+                        <input type="checkbox" name="thingsThatYouLiked" id="interior" value="interior">
+                        <label for="interior">How we decorated our interior.</label>
+                        <br>
+                        <input type="checkbox" name="thingsThatYouLiked" id="staffs" value="staffs">
+                        <label for="staffs">The behaviour and approchability of our staffs.</label>
+                        <br>
+                        <input type="checkbox" name="thingsThatYouLiked" id="managment" value="managment">
+                        <label for="managment">How we manage our store.</label>
+                        <br>
+                        <input type="checkbox" name="thingsThatYouLiked" id="products" value="products">
+                        <label for="products">The products of our store.</label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Any other thing that your want to convey to us.</legend>
+                        <textarea name="otherThing" id="otherThing" cols="30" rows="5" placeholder="Please share your thoughts"></textarea>
+                    </fieldset>
+                    <button type="submit" formaction="https://httpbin.org/post" formmethod="post">Submit</button>
+                    <button type="reset">Reset</button>
+                </form>
+
+            </section>
+            <p>Thnak You.</p>
+
+        </main>
+        <hr>
+        <footer>
+            <ul>
+                <p>You can contuct us by:</p>
+                <li>
+                    <p>
+                        <a href="gkelectornics@gmail.com"><mark>@Email.</mark></a>
+                    </p>
+                    <p>
+                        <a href="tel:9475982889"><mark>@Call</mark></a>
+                    </p>
+                </li>
+                <li>
+                    <address>
+                        G.K. Electronics<br>
+                        Near Barjora College<br>
+                        Kadasole More, Barjora, Bankura<br>
+                        722202, West Bengal.
+                    </address>
+                </li>
+            </ul>
+            <p>
+                G.K. Electronics &copy; Rathin Karmakar.
+            </p>
+            <p>
+                <a href="#"><mark>Back to top.</mark></a>
+            </p>
+        </footer>
         
     </body>
 </html>
